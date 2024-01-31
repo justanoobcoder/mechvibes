@@ -14,7 +14,7 @@ With Mechvibes Editor, you can create a new sound pack, edit existing sound pack
 
 ### How to use
 
-- Download it from [Releases](https://github.com/hainguyents13/mechvibes/releases/latest)
+- Download it from [Releases](https://github.com/justanoobcoder/mechvibes/releases/latest)
 - Run it.
 - Enjoy it.
 
