@@ -16,15 +16,15 @@ a:hover {
 #logo {
   font-family: sans-serif;
   transition: all 0.1s ease;
-  box-shadow: 0 2px #ff6666;
+  box-shadow: 0 2px #6b6b6b;
   font-size: 3rem;
   font-weight: 600;
-  background: #fff;
+  background: #181818;
   text-align: center;
   border-radius: 0.5rem;
-  border: 2px solid #000;
+  border: 2px solid #7c7c7c;
   padding: 1rem 2rem;
-  color: #333;
+  color: #8a8a8a;
 }
 
 #logo.pressed {
@@ -40,18 +40,31 @@ a:hover {
 .divider {
   display: block;
   width: 100%;
-  border-bottom: 1px solid #e4e4e4;
+  border-bottom: 1px solid #6b6b6b;
   margin-top: 1rem;
   margin-bottom: 2rem;
 }
 
 #update-available {
   padding: 8px 5px;
-  border: 1px solid #ffb8b8;
-  background: #fff2f2;
+  border: 1px solid #505050;
+  background: #161616;
   border-radius: 5px;
 }
 
+#soundpack-bug {
+  padding: 8px 5px;
+  border: 1px solid #505050;
+  background: #161616;
+  border-radius: 5px;
+}
+
+#mouseSounds {
+  padding: 8px 5px;
+  border: 1px solid #505050;
+  background: #161616;
+  border-radius: 5px;
+}
 .mb-0 {
   margin-bottom: 0;
 }
@@ -62,7 +75,7 @@ a:hover {
   appearance: none;
   width: 100%;
   height: 5px;
-  background: #d8d8d8;
+  background: #6b6b6b;
   outline: none;
   opacity: 0.7;
   -webkit-transition: 0.2s;
@@ -111,105 +124,4 @@ table tr td {
 
 table {
   margin-bottom: 0;
-}
-
-:root {
-  --checkbox-color: #ff5050;
-  --checkbox-background: #fff;
-}
-
-.checkbox{
-  /* Add if not using autoprefixer */
-  -webkit-appearance: none;
-  /* Remove most all native input styles */
-  appearance: none;
-  /* For iOS < 15 */
-  background-color: var(--checkbox-background);
-  /* Not removed via appearance */
-  margin: 0;
-
-  opacity: 0.7;
-  -webkit-transition: 0.2s;
-  transition: opacity 0.2s;
-
-  font: inherit;
-  color: currentColor;
-  width: 1.15em;
-  height: 1.15em;
-  border: 0.15em solid currentColor;
-  border-radius: 0.15em;
-  transform: translateY(-0.075em);
-
-  display: grid!important;
-  place-content: center;
-
-  pointer-events: none;
-}
-
-.checkbox::before{
-  content: "";
-  width: 0.65em;
-  height: 0.65em;
-  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
-  opacity:0;
-  transition: 200ms opacity ease-in-out;
-  box-shadow: inset 1em 1em var(--checkbox-color);
-  /* Windows High Contrast Mode */
-  background-color: CanvasText;
-}
-
-.checkbox-group{
-  user-select: none;
-  cursor: pointer;
-}
-
-/* Mouse-over effects */
-.checkbox-group:hover .checkbox {
-  opacity: 1;
-  /* Fully shown on mouse-over */
-}
-
-.checkbox:checked::before {
-  opacity:1;
-}
-
-.checkbox:focus {
-  outline: none;
-}
-
-.button {
-  align-items: center;
-  background-color: #fff;
-  border: 1px solid #e6e6e6;
-  border-radius: 3px;
-  color: #ff6666;
-  cursor: pointer;
-  display: inline-flex;
-  font-size: 11px;
-  font-weight: 800;
-  height: 36px;
-  justify-content: center;
-  letter-spacing: .5px;
-  outline: none;
-  padding: 0 15px;
-  text-transform: uppercase;
-}
-
-.button-secondary{
-  color: #1a1a1a;
-}
-
-.progress{
-  height:8px;
-  overflow:hidden;
-  background-color: #e6e6e6;
-  border-radius:2em;
-}
-
-.progress-bar{
-  float:left;
-  width:0%;
-  height:100%;
-  background-color: #ff6666;
-  transition: width 0.6s ease;
 }
